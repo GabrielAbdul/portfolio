@@ -5,29 +5,36 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./styles.css">
     <link href="./output.css" rel="stylesheet">
+    <script src="./index.js"></script>
+    <script src="https://smtpjs.com/v3/smtp.js"></script>
+
 
     <title>Document</title>
 </head>
 <body>
+
     <div class="wrapper ">
 
         <section>
             <nav id="about" class="nav-list">
-                <div class="nav-grid">
-                    <div class="logo">
-                        <ul>
-                            <img src="./assets/logo.png" alt="logo"><a href="/home"></a>
+                <div class="d-flex">
+
+                    <div class="nav-grid">
+                        <div class="logo">
+                            <ul>
+                                <img src="./assets/logo.png" alt="logo"><a href="/home"></a>
+                            </ul>
+                        </div>
+                        <ul class="nav-items">
+                            <li class="accent-color">01.   <a href="#about">About</a></li>
+                            <li class="accent-color" >02.  <a href="#exp">Experience</a></li>
+                            <li class="accent-color" >03.  <a href="#projects">Projects</a></li>
+                            <li class="accent-color" >04.  <a href="#contact">Contact</a></li>
+                            <li class="resume-lg d-flex justify-center">
+                                <a target="_blank" href="https://github.com/qtparcel/resume/blob/main/GabrielAbdulRaheem_Resume.pdf" download="Resume"><button  class="btn">Resume</button></a>
+                            </li>
                         </ul>
                     </div>
-                    <ul class="nav-items">
-                        <li class="accent-color">01.   <a href="#about">About</a></li>
-                        <li class="accent-color" >02.  <a href="#exp">Experience</a></li>
-                        <li class="accent-color" >03.  <a href="#projects">Projects</a></li>
-                        <li class="accent-color" >04.  <a href="#contact">Contact</a></li>
-                        <li class="resume-lg d-flex justify-center">
-                            <a href="./assets/GabrielAbdulRaheem_Resume.pdf" download><button  class="btn">Resume</button></a>
-                        </li>
-                    </ul>
                 </div>
             </nav>
         </section>
@@ -41,13 +48,17 @@
                 <h4>I'm a software engineer specializing in implementing cutting-edge designs across the web and mobile platforms. Currently looking for my next opportunity.</h4>
                 <div class="btn-grid">
                     <div class="btn-lg">
-                        <button class="btn btn-wide">Contact Me!</button>
+                        <a href="#contact">
+                            <button class="btn btn-wide">Contact Me!</button>
+                        </a>
                     </div>
                     <div class="btn-sm">
                         <button class="btn">Contact Me!</button>
                     </div>
                     <div class="resume-sm">
-                        <button class="btn">Resume</button>
+                       <a target="_blank" href="https://github.com/qtparcel/resume/blob/main/GabrielAbdulRaheem_Resume.pdf" download="Resume">
+                           <button class="btn">Resume</button>
+                    </a> 
                     </div>
                 </div>
             </div>
@@ -207,54 +218,62 @@
 
             <div class="projects-grid">
                 <div class="item-1">
-                    <div class="card lg:card-side bg-base-100 shadow-xl">
-                        <figure>
-                          <img
-                            src="./assets/billdr.png"
-                            alt="Album" />
-                        </figure>
-                        <div class="card-body">
-                          <h2 class="card-title">Billdr</h2>
-                          <p>Bill tracking web application.</p>
-                          <div class="card-actions justify-end">
+                    <a target="_blank" href="https://www.gabdulraheem.com">
+
+                        <div class="card lg:card-side bg-base-100 shadow-xl">
+                            <figure>
+                              <img
+                                src="./assets/logo.png"
+                                alt="Album" />
+                            </figure>
+                            <div class="card-body">
+                              <h2 class="card-title">Portfolio</h2>
+                              <p>gabdulraheem.com</p>
+                              <div class="card-actions justify-end">
+                              </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+
+                <a class="item-2" target="_blank" href="https://github.com/GabrielAbdul/AirBnB_clone_v3">
+                    <div>
+                        <div class="card lg:card-side bg-base-100 shadow-xl">
+                          <figure>
+                            <img
+                              src="./assets/airbnb.png"
+                              alt="Album" />
+                          </figure>
+                          <div class="card-body">
+                            <h2 class="card-title">AirBnB Clone</h2>
+                            <p>Fully functional AirBnB Clone.</p>
+                            <div class="card-actions justify-end">
+                            </div>
                           </div>
                         </div>
                     </div>
-                </div>
+                </a>
 
-                <div class="item-2">
+                <a class="item-3" target="_blank" href="https://www.github.com/gabrielabdul/shell_v2">
 
-                    <div class="card lg:card-side bg-base-100 shadow-xl">
-                      <figure>
-                        <img
-                          src="./assets/airbnb.png"
-                          alt="Album" />
-                      </figure>
-                      <div class="card-body">
-                        <h2 class="card-title">AirBnB Clone</h2>
-                        <p>Fully functional AirBnB Clone.</p>
-                        <div class="card-actions justify-end">
+                    <div>
+    
+                        <div class="card lg:card-side bg-base-100 shadow-xl">
+                          <figure>
+                            <img
+                              src="./assets/shell.jpg"
+                              alt="Album" />
+                          </figure>
+                          <div class="card-body">
+                            <h2 class="card-title">Shell</h2>
+                            <p>Recreation of a linux bash c shell.</p>
+                            <div class="card-actions justify-end">
+                            </div>
+                          </div>
                         </div>
-                      </div>
                     </div>
-                </div>
 
-                <div class="item-3">
-
-                    <div class="card lg:card-side bg-base-100 shadow-xl">
-                      <figure>
-                        <img
-                          src="./assets/shell.jpg"
-                          alt="Album" />
-                      </figure>
-                      <div class="card-body">
-                        <h2 class="card-title">Shell</h2>
-                        <p>Recreation of a linux bash c shell.</p>
-                        <div class="card-actions justify-end">
-                        </div>
-                      </div>
-                    </div>
-                </div>
+                </a>
             </div>
 
             
@@ -264,46 +283,43 @@
 
 
     <section>
-        <div id="contact" class="wrapper wrapper2 mt-4 ">
+        <div id="contact" class="wrapper contact-wrapper">
             <h1 class="contact-title">Contact</h1>
 
-            <div class="form-control">
-                <label class="input input-bordered flex items-center gap-2">
-                    <svg
-                      xmlns="http://www.w3.org/2000/svg"
-                      viewBox="0 0 16 16"
-                      fill="currentColor"
-                      class="h-4 w-4 opacity-70">
-                      <path
-                        d="M8 8a3 3 0 1 0 0-6 3 3 0 0 0 0 6ZM12.735 14c.618 0 1.093-.561.872-1.139a6.002 6.002 0 0 0-11.215 0c-.22.578.254 1.139.872 1.139h9.47Z" />
-                    </svg>
-                    <input type="text" class="grow" placeholder="Name" />
+             <div class="contact-container">
+
+                 <div class="wrapper flex-con">
+
     
-                  </label>
-                <label class="input input-bordered flex items-center gap-2">
-                    <svg
-                      xmlns="http://www.w3.org/2000/svg"
-                      viewBox="0 0 16 16"
-                      fill="currentColor"
-                      class="h-4 w-4 opacity-70">
-                      <path
-                        d="M2.5 3A1.5 1.5 0 0 0 1 4.5v.793c.026.009.051.02.076.032L7.674 8.51c.206.1.446.1.652 0l6.598-3.185A.755.755 0 0 1 15 5.293V4.5A1.5 1.5 0 0 0 13.5 3h-11Z" />
-                      <path
-                        d="M15 6.954 8.978 9.86a2.25 2.25 0 0 1-1.956 0L1 6.954V11.5A1.5 1.5 0 0 0 2.5 13h11a1.5 1.5 0 0 0 1.5-1.5V6.954Z" />
-                    </svg>
-                    <input type="text" class="grow" placeholder="Email" />
-                </label>
-                <div class="textarea-container">
-                    <textarea id="message" class="textarea textarea-bordered " placeholder="≡ Message"></textarea>
-                </div>
-                <button class="btn mt-1">Send</button>
-            </div>
+                     <form id="contact-form">
+    
+                         <label for="name">
+                             <span class="label-text">name:</span>
+                         </label>
+                         <input type="text" id="name" name="name" class="input input-bordered w-full max-w-xl" required> 
+                         <label for="phone">
+                             <span class="label-text">phone:</span></label>
+                         <input type="phone" id="phone" name="phone" class="input input-bordered w-full max-w-xl" required>
+                     
+                         <label for="message">
+                             <span class="label-text">message:</span></label>
+                         <textarea class="textarea textarea-bordered w-full max-w-xl" id="message" name="message" rows="5" required></textarea>
+                     
+                         <button class="btn" type="submit">Send Message</button>
+                     </form>
+                     <div id="response-message"></div>
+                     <a class="center" href="#about"><button class="btn">^</button></a>
+                 </div>
+             </div>
+
 
             
         </div>
 
     </section>
  
- 
+   <script src="https://cdn.jsdelivr.net/npm/emailjs-com@3.2.0/dist/email.min.js"></script>
+  <script src="index.js"></script>
 </body>
 </html>
+
